@@ -878,12 +878,8 @@ ul.tab_header_group{
 
 .charts-canvas.content-container{
     min-height: 840px!important;
-    margin-left: 122px;
+    margin-left: 254px;
     padding-top: 1rem;
-}
-
-.charts-canvas .backBtn{
-    margin-left: 14rem;
 }
 
 .charts-canvas .backBtn i {
