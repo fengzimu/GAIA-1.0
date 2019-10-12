@@ -1,0 +1,21 @@
+{
+  "name": "admin-lte",
+  "version": "2.4.8",
+  "main": "dist/js/adminlte.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/almasaeed2010/AdminLTE.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap-select": "^1.13.10",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "jquery": "^1.9.1",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
