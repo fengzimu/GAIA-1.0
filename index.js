@@ -23,6 +23,20 @@ app.use(bodyParser.json({ limit: '20mb' }));
 app.use('/', express.static('./'));
 //app.use('/Mercuryindex.html', express.static('./Mercuryindex.html'));
 
+app.get('/mockdata', (req, res) => {
+    try {
+        const data = await getJsonFile()
+        if(data) {
+          res.json(data)
+        } else {
+          res.status(401)
+        }
+    } catch (err) {
+        res.status(500)
+        res.send(err)
+    }
+});
+
 app.post('/Home',urlencodedParser, function (req, res) {
     console.log(req.body["form-email"], req.body)
     var response = {
@@ -39,130 +53,10 @@ app.post('/Home',urlencodedParser, function (req, res) {
         res.sendFile( __dirname + "/" + "employeeHome.html" );
     }
  })
-// http / https server
-    // app.get('/abc', async function(req, res) {
-    //     try {
-    //         const data = await getJsonFile()
-    //         //console.log(data)
-    //         if(data) {
-    //           res.json(data)
-    //         } else {
-    //           res.status(401)
-    //         }
-    //     } catch (err) {
-    //         res.status(500)
-    //         res.send(err)
-    //     }
-    // })
 
-var getJsonFile = async function() {
+var getJsonFile = async function(fileName) {
     try {
-        const contents =  await fs.readFileSync(path.resolve("./mockdata.json"), {
-            encoding: "utf-8"
-        })
-        return JSON.parse(contents)
-    } catch (err) {
-     throw err
-    }
-}
-
-app.get('/abc2', async function(req, res) {
-    try {
-        const data = await getJsonFile2()
-        //console.log(data)
-        if(data) {
-          res.json(data)
-        } else {
-          res.status(401)
-        }
-    } catch (err) {
-        res.status(500)
-        res.send(err)
-    }
-})
-
-var getJsonFile2 = async function() {
-    try {
-        const contents =  await fs.readFileSync(path.resolve("./mockdata1.json"), {
-            encoding: "utf-8"
-        })
-        return JSON.parse(contents)
-    } catch (err) {
-     throw err
-    }
-}
-
-app.get('/abc3', async function(req, res) {
-    try {
-        const data = await getJsonFile3()
-        //console.log(data)
-        if(data) {
-          res.json(data)
-        } else {
-          res.status(401)
-        }
-    } catch (err) {
-        res.status(500)
-        res.send(err)
-    }
-})
-
-var getJsonFile3 = async function() {
-    try {
-        const contents =  await fs.readFileSync(path.resolve("./mockdata2.json"), {
-            encoding: "utf-8"
-        })
-        return JSON.parse(contents)
-    } catch (err) {
-     throw err
-    }
-}
-
-app.get('/abc4', async function(req, res) {
-    try {
-        const data = await getJsonFile4()
-        //console.log(data)
-        if(data) {
-          res.json(data)
-        } else {
-          res.status(401)
-        }
-    } catch (err) {
-        res.status(500)
-        res.send(err)
-    }
-})
-
-var getJsonFile4 = async function() {
-    try {
-        const contents =  await fs.readFileSync(path.resolve("./mockdata3.json"), {
-            encoding: "utf-8"
-        })
-        return JSON.parse(contents)
-    } catch (err) {
-     throw err
-    }
-}
-
-
-app.get('/abc5', async function(req, res) {
-    try {
-        const data = await getJsonFile5()
-        //console.log(data)
-        if(data) {
-          res.json(data)
-        } else {
-          res.status(401)
-        }
-    } catch (err) {
-        res.status(500)
-        res.send(err)
-    }
-})
-
-var getJsonFile5 = async function() {
-    try {
-        const contents =  await fs.readFileSync(path.resolve("./mockdata4.json"), {
+        const contents =  await fs.readFileSync(path.resolve("./mockdata/" + fileName), {
             encoding: "utf-8"
         })
         return JSON.parse(contents)
