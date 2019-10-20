@@ -19,26 +19,53 @@ const path = require('path');
 const app = express();
 app.use(bodyParser.json({ limit: '20mb' }));
 
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({extended: false}));//解析字符
+
 // static files
 app.use('/', express.static('./'));
 //app.use('/Mercuryindex.html', express.static('./Mercuryindex.html'));
 
-app.get('/mockdata', (req, res) => {
+var getJsonFile = async function(fileName) {
+    // try {
+    //     const contents =  await fs.readFileSync(path.resolve("./mockdata/" + fileName), {
+    //         encoding: "utf-8"
+    //     })
+    //     return JSON.parse(contents);
+    // } catch (err) {
+    //  throw err
+    // }
+};
+
+app.post('/mockdata',function(req, res) {
     try {
-        const data = await getJsonFile()
-        if(data) {
-          res.json(data)
-        } else {
-          res.status(401)
-        }
+        var fileName = 'csr_owner_insight_project.json';
+        // const data = getJsonFile(fileName);
+        // console.log("data: " + data);
+        // if(data) {
+        //   res.json(data);
+        // } else {
+        //   res.status(401);
+        // }
+        var file = path.join(__dirname, 'mockdata/' + fileName); //文件路径，__dirname为当前运行js文件的目录
+        console.log("file: " + file);
+        //读取json文件
+        fs.readFile(file, 'utf-8', function(err, data) {
+            console.log("data: " + data);
+            if (err) {
+                res.send('文件读取失败');
+            } else {
+                res.send(data);
+            }
+        });
     } catch (err) {
-        res.status(500)
-        res.send(err)
+        res.status(500);
+        res.send(err);
     }
 });
 
 app.post('/Home',urlencodedParser, function (req, res) {
-    console.log(req.body["form-email"], req.body)
+    console.log(req.body["form-email"], req.body);
     var response = {
         "form-email":req.body["form-email"],
         "form-password":req.body["form-password"],
@@ -52,18 +79,8 @@ app.post('/Home',urlencodedParser, function (req, res) {
     {
         res.sendFile( __dirname + "/" + "employeeHome.html" );
     }
- })
+ });
 
-var getJsonFile = async function(fileName) {
-    try {
-        const contents =  await fs.readFileSync(path.resolve("./mockdata/" + fileName), {
-            encoding: "utf-8"
-        })
-        return JSON.parse(contents)
-    } catch (err) {
-     throw err
-    }
-}
 
 var httpServer = http.createServer(app);
 // var httpsServer = https.createServer(credentials, app);

@@ -1,0 +1,379 @@
+{
+    "categories": [
+        {"index": 0, "name" : "NGO", "icon": "circle"},
+        {"index": 1, "name" : "Project", "icon": "circle"},
+        {"index": 2, "name" : "Company", "icon": "circle"},
+        {"index": 3, "name" : "Vendor", "icon": "circle"},
+        {"index": 4, "name" : "Topic", "icon": "circle"},
+        {"index": 5, "name" : "Location", "icon": "circle"}
+    ],
+    "datas":[
+        {
+            "name": "China Children and Teenagers'Fund",
+            "des": [
+                {
+                    "desName": "Name",
+                    "desValue": "China Children and Teenagers'Fund"
+                },
+                {
+                    "desName": "Score",
+                    "desValue": "86.1369（Excellent)"
+                },
+                {
+                    "desName": "Transparency Index",
+                    "desValue": "16.25(Excellent)"
+                },
+                {
+                    "desName": "Capability Index",
+                    "desValue": "22.42(Excellent)"
+                },
+                {
+                    "desName": "Partners Index",
+                    "desValue": "19.6415(Excellent)"
+                },
+                {
+                    "desName": "Hazard Index",
+                    "desValue": "13.75(Excellent)"
+                },
+                {
+                    "desName": "Brand Index",
+                    "desValue": "14.0754(Excellent)"
+                }
+            ],
+            "url": "http://www.cctf.org.cn/",
+            "category": 0,
+            label: {
+                normal: {
+                    show: true
+                }
+            }
+        },
+        //projects 
+        {
+            "name": "Spring Buds Project",
+            "des": [
+                {
+                    "desName": "Business Impact",
+                    "desValue": "Good"
+                },
+                {
+                    "desName": "Social Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "People Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Satisfaction",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Recommendation",
+                    "desValue": "Excellent"
+                }
+            ],
+            "category": 1,
+            label: {
+                normal: {
+                    show: true
+                }
+            }
+        },
+        {
+            "name": "Cloud Teaching",
+            "des": [
+                {
+                    "desName": "Business Impact",
+                    "desValue": "Good"
+                },
+                {
+                    "desName": "Social Impact",
+                    "desValue": "Good"
+                },
+                {
+                    "desName": "People Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Satisfaction",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Recommendation",
+                    "desValue": "Excellent"
+                }
+            ],
+            "category": 1
+        },
+        {
+            "name": "Children' Happy Home",
+            "des": [
+                {
+                    "desName": "Business Impact",
+                    "desValue": "Good"
+                },
+                {
+                    "desName": "Social Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "People Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Satisfaction",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Recommendation",
+                    "desValue": "Excellent"
+                }
+            ],
+            "category": 1
+        },
+        {
+            "name": "Hello Kids",
+            "des": [
+                {
+                    "desName": "Business Impact",
+                    "desValue": "Good"
+                },
+                {
+                    "desName": "Social Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "People Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Satisfaction",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Recommendation",
+                    "desValue": "Excellent"
+                }
+            ],
+            category: 1,
+            label: {
+                normal: {
+                    show: true
+                }
+            }
+        },
+        {
+            "name": "Child Safety",
+            "des": [
+                {
+                    "desName": "Business Impact",
+                    "desValue": "Good"
+                },
+                {
+                    "desName": "Social Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "People Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Satisfaction",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Recommendation",
+                    "desValue": "Excellent"
+                }
+            ],
+            category: 1
+        },
+        {
+            "name": "Children's Health and salvation",
+            "des": [
+                {
+                    "desName": "Business Impact",
+                    "desValue": "Good"
+                },
+                {
+                    "desName": "Social Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "People Impact",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Satisfaction",
+                    "desValue": "Excellent"
+                },
+                {
+                    "desName": "Recommendation",
+                    "desValue": "Excellent"
+                }
+            ],
+            category: 1
+        },
+        //Company
+        {
+            "name": "PWC",
+            "des": "",
+            "category": 2
+        },
+        {
+            "name": "Accenture",
+            "des": "",
+            "category": 2
+        },
+        {
+            "name": "Company A",
+            "des": "",
+            "category": 2
+        },
+        {
+            "name": "Evergrande Real Estate Group",
+            "des": "",
+            "category": 2
+        },
+        //Topic
+        {
+            "name": "Aucma Health Care",
+            "des": "",
+            "category": 4,
+            label: {
+                normal: {
+                    show: true
+                }
+            }
+        },
+        {
+            "name": "Education",
+            "des": "",
+            "category": 4,
+            label: {
+                normal: {
+                    show: true
+                }
+            }
+        },
+        {
+            "name": "Female",
+            "des": "",
+            "category": 4,
+            label: {
+                normal: {
+                    show: true
+                }
+            }
+        },
+        //Location
+        {
+            "name": "Shanghai",
+            "des": "",
+            "category": 5,
+        },
+        {
+            "name": "Beijing",
+            "des": "",
+            "category": 5,
+        }
+    ],
+    "links": [
+        { 
+            "source": "China Children and Teenagers'Fund",
+            "target": "Spring Buds Project",
+            "des": "Project"
+        },
+        {
+            "source": "China Children and Teenagers'Fund",
+            "target": "Cloud Teaching",
+            "des": "Project"
+        },
+        {
+            "source": "China Children and Teenagers'Fund",
+            "target": "Children' Happy Home",
+            "des": "Project"
+        },
+        {
+            "source": "China Children and Teenagers'Fund",
+            "target": "HELLO Kids",
+            "des": "Project"
+        },
+        {
+            "source": "China Children and Teenagers'Fund",
+            "target": "Child Safety",
+            "des": "Project"
+        },
+        {
+            "source": "China Children and Teenagers'Fund",
+            "target": "Children's Health and salvation",
+            "des": "Project"
+        },
+        {
+            "source": "Spring Buds Project",
+            "target": "Accenture",
+            "des": "Partner"
+        },
+        {
+            "source": "Spring Buds Project",
+            "target": "PWC",
+            "des": "Partner"
+        },
+        {
+            "source": "Company A",
+            "target": "Inclusion with Intellectual and Developmental Disabilities through Happy Sport Camp",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "Design Thinking Volunteers for UNDP National Dialogue China 2019",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "Help Rural Children Out of Poverty Through Cloud Teaching",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "Helping migrant children appreciate architect culture at the Palace Museum",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "DT workshop for Narada Foundation in BJ",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "NGO 2.0 Hackathon",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "watch the National Palace Museum art appreciation",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "Helping migrant children appreciate ART in July",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "RUN WITH LOVE 2019 - World Hemophilia Day",
+            "des": "Project"
+        },
+        {
+            "source": "Company A",
+            "target": "UN Women SHE CAN digital empowerment to women entrepreneurs in Guangzhou June 18-19",
+            "des": "Project"
+        },
+        {
+            "source": "Inclusion with Intellectual and Developmental Disabilities through Happy Sport Camp",
+            "target": "Beijing",
+            "des": "Place"
+        }
+    ]
+}
